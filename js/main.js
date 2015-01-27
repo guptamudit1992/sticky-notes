@@ -20,7 +20,6 @@ $(document).ready(function(){
 		change_font($(this).attr('val'));
 	})
 
-
 	$(document).on('click','#color ul li',function(){	
 		change_background_color($(this).attr('val'));
 	})

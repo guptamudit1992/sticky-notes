@@ -68,15 +68,19 @@ body {
 }
 
 .sticker {
-	width: 216px;
+	width: 210px;
 	box-shadow: 10px 10px 5px #888888;
 	border-radius: 2px;
 	cursor: pointer;
+	background-color: grey;
 }
 
 .sticker-box {
+	width: 188px;
+	height: 200px;
 	padding: 10px;	
 	font-family: cursive;
+	text-align: left;
 }
 
 .color_comb {
@@ -147,7 +151,6 @@ body {
 .options#font:hover ul {
 	 display: block;
 }
-
 
 
 /******** Editable CLasses ***********/
