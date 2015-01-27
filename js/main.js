@@ -5,27 +5,27 @@ $(document).ready(function(){
 	})
 
 	$(document).on('click','#bold',function(){
-		bold();
+		bold(this);
 	});
 
 	$(document).on('click','#italics',function(){
-		italics();
+		italics(this);
 	})
 
 	$(document).on('click','#underline',function(){
-		underline();
+		underline(this);
 	})
 
 	$(document).on('click','#font ul li',function(){	
-		change_font($(this).attr('val'));
+		change_font($(this).attr('val'), this);
 	})
 
 	$(document).on('click','#color ul li',function(){	
-		change_background_color($(this).attr('val'));
+		change_background_color($(this).attr('val'), this);
 	})
 
 	$(document).on('click','#delete',function(){
-		note_delete();
+		note_delete(this);
 	})
 
 
@@ -40,38 +40,38 @@ $(document).ready(function(){
 	}
 
 	/******** Bold **********/
-	function bold() {
-		$('.sticker-box').removeClass('italics underline');
-		$('.sticker-box').addClass('bold');
+	function bold(element) {
+		$(element).parent().parent().find('.sticker-box').removeClass('italics underline');
+		$(element).parent().parent().find('.sticker-box').addClass('bold');
 	}
 
 	/******** Italics **********/
-	function italics() {
-		$('.sticker-box').removeClass('bold underline');
-		$('.sticker-box').addClass('italics');
+	function italics(element) {
+		$(element).parent().parent().find('.sticker-box').removeClass('bold underline');
+		$(element).parent().parent().find('.sticker-box').addClass('italics');
 	}
 
 	/******** Underline **********/
-	function underline() {
-		$('.sticker-box').removeClass('italics bold');
-		$('.sticker-box').addClass('underline');	
+	function underline(element) {
+		$(element).parent().parent().find('.sticker-box').removeClass('italics bold');
+		$(element).parent().parent().find('.sticker-box').addClass('underline');	
 	}
 
 	/******** Change Background Color **********/
-	function change_font(font_code) {
-		$('.sticker-box').removeClass('ft-12 ft-14 ft-18 ft-24')
-		$('.sticker-box').addClass(font_code);	
+	function change_font(font_code, element) {
+		$(element).parent().parent().find('.sticker-box').removeClass('ft-12 ft-14 ft-18 ft-24')
+		$(element).parent().parent().find('.sticker-box').addClass(font_code);	
 	}
 
 	/******** Change Background Color **********/
-	function change_background_color(color_code) {
-		$('.sticker-box').removeClass('st-grey st-white st-blue st-pink')
-		$('.sticker-box').addClass(color_code);	
+	function change_background_color(color_code, element) {
+		$(element).parent().parent().find('.sticker-box').removeClass('st-grey st-white st-blue st-pink')
+		$(element).parent().parent().find('.sticker-box').addClass(color_code);	
 	}
 
 	/******** Delete Note **********/
-	function note_delete() {
-		$('.sticker').remove();
+	function note_delete(element) {
+		$(element).parent().parent().remove();
 	}
 
 })

@@ -74,6 +74,7 @@ body {
 	border-radius: 2px;
 	cursor: pointer;
 	background-color: grey;
+	margin-bottom: 10px;
 }
 
 .sticker-box {
@@ -157,6 +158,9 @@ body {
 	 display: block;
 }
 
+.hidden {
+	display: none;
+}
 
 /******** Editable CLasses ***********/
 .bold {
