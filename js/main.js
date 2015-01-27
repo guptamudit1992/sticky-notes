@@ -28,6 +28,11 @@ $(document).ready(function(){
 		note_delete(this);
 	})
 
+	$(document).on('click, hover, focus', '.sticker-box', function(){
+		$('.edit-bar').addClass('hidden');
+		$(this).parent().find('.edit-bar').removeClass('hidden');
+	})
+
 
 
 
