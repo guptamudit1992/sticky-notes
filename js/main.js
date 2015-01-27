@@ -41,16 +41,19 @@ $(document).ready(function(){
 
 	/******** Bold **********/
 	function bold() {
+		$('.sticker-box').removeClass('italics underline');
 		$('.sticker-box').addClass('bold');
 	}
 
 	/******** Italics **********/
 	function italics() {
+		$('.sticker-box').removeClass('bold underline');
 		$('.sticker-box').addClass('italics');
 	}
 
 	/******** Underline **********/
 	function underline() {
+		$('.sticker-box').removeClass('italics bold');
 		$('.sticker-box').addClass('underline');	
 	}
 
