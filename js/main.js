@@ -44,9 +44,15 @@ $(document).ready(function(){
 	function create_note() {
 		var sticker = $(document).find('#sticker-template').clone();
 		sticker.draggable();
-		var left_margin = note_count*270 + 20;
+		
+		var left_row = note_count%5;
+		var left_margin = left_row*270 + 20;
+		var top_row = parseInt(note_count/5);
+		var top_margin = top_row*250 + 130;
+		
 		sticker.css({
-			'left': left_margin
+			'left': left_margin ,
+			'top': top_margin
 		});
 		$('.main-body').append(sticker);
 		note_count++;
