@@ -75,6 +75,7 @@ body {
 	cursor: pointer;
 	background-color: grey;
 	margin-bottom: 10px;
+	position: absolute !important;
 }
 
 .sticker-box {

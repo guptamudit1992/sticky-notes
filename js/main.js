@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	var note_count = 0;
+
 	$(document).on('click','#create',function(){
 		create_note();
 	})
@@ -42,7 +44,12 @@ $(document).ready(function(){
 	function create_note() {
 		var sticker = $(document).find('#sticker-template').clone();
 		sticker.draggable();
+		var left_margin = note_count*270 + 20;
+		sticker.css({
+			'left': left_margin
+		});
 		$('.main-body').append(sticker);
+		note_count++;
 	}
 
 	/******** Bold **********/
