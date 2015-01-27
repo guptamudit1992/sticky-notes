@@ -76,6 +76,12 @@ body {
 
 .sticker-box {
 	padding: 10px;	
+	font-family: cursive;
+}
+
+.color_comb {
+	height:5px;
+	width: 5px;
 }
 
 .st-white {
@@ -88,6 +94,59 @@ body {
 	color: white;
 }
 
+.st-blue {
+	background-color: rgb(28, 28, 192);
+	color: white;
+}
+
+.st-pink {
+	background-color: rgb(158, 31, 210);
+	color: white;
+}
+
+.options#color ul {
+    display: none;
+	position: absolute;
+	left: 70%;
+	background-color: black;
+	top: 3%;
+	-webkit-padding-start: 0px !important;
+}
+
+.options#color ul li {
+	padding: 5px;
+	border: solid 1px white;	
+}
+
+.options#color ul li:hover {
+	background-color: #6F7173;
+}
+
+.options#color:hover ul {
+	 display: block;
+}
+
+.options#font ul {
+    display: none;
+	position: absolute;
+	left: 32%;
+	background-color: black;
+	top: 3%;
+	-webkit-padding-start: 0px !important;
+}
+
+.options#font ul li {
+	padding: 5px;
+	border: solid 1px white;	
+}
+
+.options#font ul li:hover {
+	background-color: #6F7173;
+}
+
+.options#font:hover ul {
+	 display: block;
+}
 
 
 
@@ -111,6 +170,10 @@ body {
 	font-size: 24px;
 }
 
+.ft-18 {
+	font-size: 18px;
+}
+
 .ft-17 {
 	font-size: 17px;
 }
@@ -119,6 +182,9 @@ body {
 	font-size: 14px;
 }
 
+.ft-12 {
+	font-size: 12px;
+}
 
 /********** Padding **************/
 .p-10 {
