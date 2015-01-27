@@ -96,16 +96,18 @@ body {
 }
 
 .st-grey {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(grey));
 	background-color: grey;
-	color: white;
+	color: black;
 }
 
 .st-blue {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(rgb(111, 111, 219)));
 	background-color: rgb(111, 111, 219);
-	color: white;
 }
 
 .st-yellow {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffcc), to(yellow));
 	background-color: rgb(231, 231, 58);;
 	color: black;
 }

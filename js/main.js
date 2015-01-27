@@ -41,6 +41,7 @@ $(document).ready(function(){
 	/******** Create Note **********/
 	function create_note() {
 		var sticker = $(document).find('#sticker-template').clone();
+		sticker.draggable();
 		$('.main-body').append(sticker);
 	}
 
