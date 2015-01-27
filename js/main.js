@@ -64,14 +64,14 @@ $(document).ready(function(){
 
 	/******** Change Background Color **********/
 	function change_font(font_code, element) {
-		$(element).parent().parent().find('.sticker-box').removeClass('ft-12 ft-14 ft-18 ft-24')
-		$(element).parent().parent().find('.sticker-box').addClass(font_code);	
+		$(element).parent().parent().parent().parent().find('.sticker-box').removeClass('ft-12 ft-14 ft-18 ft-24');
+		$(element).parent().parent().parent().parent().find('.sticker-box').addClass(font_code);	
 	}
 
 	/******** Change Background Color **********/
 	function change_background_color(color_code, element) {
-		$(element).parent().parent().find('.sticker-box').removeClass('st-grey st-white st-blue st-pink')
-		$(element).parent().parent().find('.sticker-box').addClass(color_code);	
+		$(element).parent().parent().parent().parent().find('.sticker-box').removeClass('st-grey st-white st-blue st-yellow');
+		$(element).parent().parent().parent().parent().find('.sticker-box').addClass(color_code);	
 	}
 
 	/******** Delete Note **********/
