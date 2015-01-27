@@ -1,0 +1,134 @@
+body {
+	margin:0px !important;
+	background-color: #B0B8BA;
+	font-family: sans-serif;
+}
+
+.top-bar {
+	width: 100%;
+	padding: 10px;
+	background-color: black;
+	color: white;
+}
+
+.logo {
+	height: 20px;
+}
+
+.side-bar {
+	width: 100%;
+	padding: 15px;
+}
+
+.main-body {
+	width: 100%;
+	padding: 15px;
+}
+
+.btn-primary {
+	box-shadow: 5px 5px 5px #888888;
+	background-color: #7A8288;
+	color: white;
+	border: 0px;
+	border-radius: 2px;
+	font-family: cursive;
+}
+
+.btn-primary:hover {
+	outline: none;
+	background-color: #6F7173;
+}
+
+.btn-primary:focus {
+	outline: none;
+}
+
+.edit-bar {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: black;	
+	border-radius: 2px;
+	color: white;
+}
+
+.edit-bar .options {
+	padding: 5px;
+	border-right: solid 1px white;
+	cursor: pointer;
+}
+
+.edit-bar .options.last {
+	padding: 5px;
+	cursor: pointer;
+	border-right: none;
+}
+
+.edit-bar .options:hover, .edit-bar .options:focus, .edit-bar .options:visited {
+	background-color: #7A8288;
+}
+
+.sticker {
+	width: 216px;
+	box-shadow: 10px 10px 5px #888888;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.sticker-box {
+	padding: 10px;	
+}
+
+.st-white {
+	background-color: white;
+	color: black;
+}
+
+.st-grey {
+	background-color: grey;
+	color: white;
+}
+
+
+
+
+/******** Editable CLasses ***********/
+.bold {
+	font-weight: 800;
+}
+
+.italics {
+	font-style: italic;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+
+
+/********* Font Sizes ***********/
+.ft-24 {
+	font-size: 24px;
+}
+
+.ft-17 {
+	font-size: 17px;
+}
+
+.ft-14 {
+	font-size: 14px;
+}
+
+
+/********** Padding **************/
+.p-10 {
+	padding: 10px;
+}
+
+.pl-20 {
+	padding-left: 20px;
+}
+
+.pr-20 {
+	padding-right: 20px;
+}

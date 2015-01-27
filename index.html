@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Reposo </title>
+		<link rel="shortcut icon" href="images/logo.png">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+
+		<!-- ############## Top Bar ############## -->
+		<div class="top-bar">
+			<img src="images/logo.png" class="logo" />
+			<span class="ft-24"> Roposo </span>
+		</div>
+		<!-- ############## End ############## -->
+
+		<!-- ############## Menu Bar ############## -->
+		<div class="side-bar">
+			<button class="btn-primary ft-17 p-10 pl-20 pr-20" id="create"> Create Sticker </button>
+		</div>
+		<!-- ############## End ############## -->
+
+		<!-- ############## Application Body ############## -->
+		<div class="main-body">
+			
+			<!-- ############### Sticker Template ############### -->
+			<div class="sticker ft-14 st-white" id="sticker-template">
+				<div class="edit-bar">
+					<span class="options" id="bold" title="Bold">
+						<b>B</b>
+					</span>	
+					<span class="options" id="italics" title="Italics">
+						<i>I</i>
+					</span>
+					<span class="options" id="underline" title="Underline">
+						<u>U</u>
+					</span>
+					<span class="options" id="font-size" title="Font Size">
+						Font
+					</span>
+					<span class="options" id="edit" title="Edit Text">
+						Edit 
+					</span>
+					<span class="options" id="color" title="Change Background Color">
+						Color
+					</span>
+					<span class="options last" id="delete" title="Delete">
+						x
+					</span>	
+				</div>
+				<div class="sticker-box st-grey">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 
+				</div>
+			</div>
+			<!-- ############## End ############## -->
+
+		</div>
+		<!-- ############## End ############## -->
+
+
+		<!-- Google Jquery CDN -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+		<!-- Custom Js -->
+		<script type="text/javascript" src="js/main.js"></script>
+		<script>
+		  $(function() {
+		    $(".sticker").draggable();
+		  });
+		 </script>
+
+	</body>
+</html>
